@@ -5,6 +5,7 @@
     import sample3 from "../media/sample3.png";
     import sample4 from "../media/sample4.png";
     import sample5 from "../media/sample5.png";
+    import sample6 from "../media/sample6.png";
 </script>
 
 <div class="flex flex-col bg-white w-100 text-stone-900">
@@ -37,5 +38,39 @@
             <img class="flex m-10" src={sample4} alt="jumbotron picture"/>
         </div>
         <img class="flex w-3/5" src={sample5} alt="jumbotron picture"/>
+    </section>
+    <section class="flex flex-col text-3xl grid justify-items-center p-20">
+        <p class="w-3/5 py-10 dark:text-stone-900">We believe it takes focus to create truly outstanding instruments. We only work on a few products and we strive to make them great.
+        </p>
+        <p class="w-3/5 text-lg">Rather than having a one-size-fits-all process, we try to give our people what they need to work their magic and grow. We’ve learned that achieving the best results comes from building teams that are richly diverse, and thus able to explore problems from a wider set of perspectives. We don’t always agree with each other, but opinion and debate are valued and openly encouraged.        </p>
+    </section>
+    <section class="flex jumbotron px-10">
+        <img class="flex px-20" src={sample6} alt="jumbotron picture"/>
+    </section>
+    <section class="flex flex-col text-3xl grid justify-items-center p-20">
+        <p class="w-3/5 py-10 dark:text-stone-900">We’re passionate about what we do, but we’re equally passionate about improving who we are.
+        </p>
+        <p class="w-3/5 text-lg py-5">We work hard to foster an environment where people can grow both personally and professionally, and we strive to create a wealth of opportunities to learn from and with each other.
+        </p>  
+        <p class="w-3/5 text-lg">Alongside an internal training program, employees are actively supported in acquiring new knowledge and skills, and coached on applying these in their daily work. In addition, staff-organized development and music salons are a chance to discuss new technologies, production techniques and best practices.        </p> 
+    </section>
+    <section class="flex flex-row h-96 bg-gradient-to-r from-white to-purple-500 justify-evenly p-5">
+        <img class="flex w-[430px]" src={sample2} alt="jumbotron picture"/>
+        <img class="flex w-[530px] p-5" src={sample5} alt="jumbotron picture"/>
+    </section>
+    <section class="flex flex-col text-3xl grid justify-items-center p-20">
+        <p class="w-3/5 py-10 dark:text-stone-900">We want our employees to love it here. Since we’re looking for exceptional talent from around the world, we will do everything we can to make your transition as easy as possible.
+        </p>
+        <p class="w-3/5 text-lg py-5">If you're joining us in Berlin, we'll help with relocation and paperwork. We’ll even provide you with free German or English lessons. Plus, working in Germany means you can expect comprehensive health insurance for you and your family, as well as generous maternity and paternity leave. Office hours are flexible, but it’s not all work; we have several company and team outings throughout the year as well as a variety of fun, informal small-group activities.
+        </p>  
+    </section>
+    <section class="flex flex-row h-96 bg-gradient-to-r from-white to-purple-500 p-5">
+        <img class="flex w-[430px] px-10" src={sample2} alt="jumbotron picture" />
+        <div class="flex flex-col items-center">
+            <p class="w-2/5 text-3xl dark:text-stone-900 py-5">We’re really proud of the work we’ve done so far. But there’s so much more to come. If you’d like to be a part of it, please join us.
+            </p>  
+            <br />
+            <span class="w-2/5 text-3xl dark:text-stone-900 py-3">See open jobs</span>
+        </div>
     </section>
 </div>
