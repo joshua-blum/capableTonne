@@ -1,8 +1,10 @@
-<script lang="ts"></script>
+<script lang="ts">
+    import logo from "../media/ableton-hallmark.ef5355379032.svg";
+</script>
 
 <header class="flex bg-white flex-row px-4 py-4 justify-between text-lg text-stone-900 border-none">
     <div class="flex">
-        <h3 class="flex mx-1 px-5">CapableTonne</h3>
+        <img class="flex mx-1 px-5" src={logo} alt="logo" />
         <navbar class="flex mx-1 space-evenly">
             <li class="flex list-none mx-2">Live</li>
             <li class="flex list-none mx-2">Push</li>
