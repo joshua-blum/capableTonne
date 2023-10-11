@@ -67,10 +67,10 @@
     <section class="flex flex-row h-96 bg-gradient-to-r from-white to-purple-500 p-5">
         <img class="flex w-[430px] px-10" src={sample2} alt="jumbotron picture" />
         <div class="flex flex-col items-center">
-            <p class="w-2/5 text-3xl dark:text-stone-900 py-5">We’re really proud of the work we’ve done so far. But there’s so much more to come. If you’d like to be a part of it, please join us.
+            <p class="w-3/5 text-3xl dark:text-stone-900 py-5">We’re really proud of the work we’ve done so far. But there’s so much more to come. If you’d like to be a part of it, please join us.
             </p>  
             <br />
-            <span class="w-2/5 text-3xl dark:text-stone-900 py-3">See open jobs</span>
+            <span class="w-3/5 text-3xl py-3 text-blue-800">See open jobs</span>
         </div>
     </section>
 </div>
