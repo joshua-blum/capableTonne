@@ -1,5 +1,10 @@
 <script lang="ts">
     import logo from "../media/ableton-hallmark.ef5355379032.svg";
+    let emailAddress: String;
+    function subscribeToNewsletter(email: String){
+        console.log('we would be making an api request with the following email address: ', email);
+        emailAddress = '';
+    }
 </script>
 
 <footer class="flex bg-white flex-col p-20 text-stone-900">
@@ -27,7 +32,13 @@
             <h4>Sign up for our newsletter</h4>
             <p>Enter your email address to stay up to date with the latest offers, tutorials, downloads, surveys and more.
             </p>
-            <p>insert signup for here</p>
+            <div class="newsletterField py-3">
+                <input type="text" placeholder="Email address..." bind:value={emailAddress}/>
+                <button 
+                    class="bg-orange-800 text-white p-2 m-0 buttonCustom"
+                    type="button" 
+                    on:click={() => {subscribeToNewsletter(emailAddress)}}>Subscribe</button>
+            </div>
         </div>
     </section>
     <section class="flex flex-row p-10">
@@ -41,8 +52,13 @@
         </div>
         <div class="langAndLoc flex flex-col px-10 w-2/5">
             <h4>Language and Location</h4>
-            <p>Dropdown for language | dropdown for location
-            </p>
+            <div class="dropdown">
+                <button>Language</button>
+                <div class="dropdownMenu">
+                    Dropdown content
+                </div>
+            </div>
+
         </div>
     </section>
     <section class="flex flex-row justify-between px-6 py-3">
@@ -60,3 +76,40 @@
         </div>
     </section>
 </footer>
+
+<style>
+    .buttonCustom {
+        transition: background-color 50ms ease-in-out, padding 50ms ease-in-out;
+        border-radius: 25px;
+    }
+    .buttonCustom:hover {
+        background-color: orange;
+        padding: 9px;
+        transition: background-color 50ms ease-in-out, padding 50ms ease-in-out
+    }
+    .buttonCustom:active {
+        background-color: yellow;
+        transition: background-color 50ms ease-in, padding 50ms ease-in-out
+    }
+
+    /* .dropdown {
+        position:relative;
+    }
+
+    .dropdownMenu {
+        position:absolute;
+        left: 0;
+        top: calc(100% + 0.5rem);
+        padding: 0.75rem;
+        border-radius: 0.25rem;
+        box-shadow: 0 2px 5px 0 rgba(0,0,0,.5);
+        transform: translateY(-10px);
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+    }
+
+    .dropdownContent {
+
+    } */
+</style>
