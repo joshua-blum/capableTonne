@@ -52,13 +52,24 @@
         </div>
         <div class="langAndLoc flex flex-col px-10 w-2/5">
             <h4>Language and Location</h4>
-            <div class="dropdown">
-                <button>Language</button>
-                <div class="dropdownMenu">
-                    Dropdown content
+            <div class="flex flex-row">
+            <div class="dropdown px-3 mx-1">
+                <button class="dropbtn">Language</button>
+                <div class="dropdown-content">
+                  <a href="#">English</a>
+                  <a href="#">Spanish</a>
+                  <a href="#">German</a>
                 </div>
             </div>
-
+            <div class="dropdown px-3 mx-1">
+                <button class="dropbtn">Location</button>
+                <div class="dropdown-content">
+                  <a href="#">United States</a>
+                  <a href="#">Mexico</a>
+                  <a href="#">Germany</a>
+                </div>
+            </div>
+        </div>
         </div>
     </section>
     <section class="flex flex-row justify-between px-6 py-3">
@@ -92,7 +103,51 @@
         transition: background-color 50ms ease-in, padding 50ms ease-in-out
     }
 
-    /* .dropdown {
+    /* The container <div> - needed to position the dropdown content */
+    .dropdown {
+        position: relative;
+        display: inline-block;
+        background-color: rgb(154 52 18);
+        color: white;
+        border-radius: 25px;
+    }
+
+    /* Dropdown Content (Hidden by Default) */
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+
+    /* Links inside the dropdown */
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    /* Change color of dropdown links on hover */
+    .dropdown-content a:hover {
+        background-color: #f1f1f1;
+    }
+
+    /* Show the dropdown menu on hover */
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    /* Change the background color of the dropdown button when the dropdown content is shown */
+    .dropdown:hover .dropbtn {
+    /* background-color: #3e8e41; */
+    }
+
+
+    /*
+    .dropdown {
         position:relative;
     }
 
