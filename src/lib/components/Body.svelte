@@ -25,10 +25,18 @@
         <p class="w-3/5 text-lg">We feel the same way about making Ableton products. The driving force behind CapableTonne is our passion for what we make, and the people we make it for.</p>
     </section>
     <section class="flex items-center flex-col">
-        <iframe class="flex self-center" width="720" height="480" src="https://www.youtube.com/watch?v=9SbnhgjeyXA" ></iframe>
-        <p class="flex content-start w-[720px]">Why CapableTonne - Juanpe Bolivar</p>
+        <iframe 
+            class="rounded-lg"
+            width="560" 
+            height="315" 
+            src="https://www.youtube.com/embed/9SbnhgjeyXA?si=ZFTl9RK16T6Du9h0" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            allowfullscreen></iframe>
+        <p class="flex content-start w-[560px] px-1">Why CapableTonne - Juanpe Bolivar</p>
     </section>
-    <section class="flex flex-col text-3xl grid justify-items-center p-20">
+    <section class="flex flex-col text-3xl grid justify-items-center p-10">
         <p class="w-3/5 py-10 dark:text-stone-900">We are more than 350 people from 30 different countries divided between our headquarters in Berlin and our offices in Los Angeles and Tokyo.</p>
         <p class="w-3/5 text-lg">Most of us are active musicians, producers, and DJs, and many of us use Live and Push every day. We come from a wide range of cultural and professional backgrounds. Some of us have PhDs, some are self-taught, and most of us are somewhere in between. What connects us is the shared belief that each of us has the skills and knowledge to contribute to something big: helping to shape the future of music culture.</p>
     </section>
